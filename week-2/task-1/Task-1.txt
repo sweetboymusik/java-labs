@@ -1,0 +1,39 @@
+5 classes of a hospital management system:
+    1. Medication/Drugs
+    2. Admins
+    3. ORs
+    4. Equipment
+    5. Facilities
+
+--------------------------------------------------
+
+Doctor
+-firstName:String
+-lastName:String
+-id:int
+-specialty:String
+
++Doctor(firstName:String, lastName:String, id:int, specialty:String)
++getName():String
++getId():int
++getSpecialty():String
++performCheckup():void
++perscribeMeds():void
++toString():String
+
+--------------------------------------------------
+
+Patient
+-firstName:String
+-lastName:String
+-age:int
+-gender:String
+-address:String
+
++Patient(firstName:String, lastName:String, age:int, gender:String)
++getName():String
++getAge():int
++getGender():String
++getAddress():String
++setAddress(address:String):void
++bookAppointment():void

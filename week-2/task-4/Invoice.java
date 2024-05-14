@@ -11,6 +11,15 @@ public class Invoice {
         this.desc = desc;
         this.qty = qty;
         this.unitPrice = unitPrice;
+        invoiceCount++;
+    }
+
+    public Invoice(Invoice invoice) {
+        this.id = invoice.id;
+        this.desc = invoice.desc;
+        this.qty = invoice.qty;
+        this.unitPrice = invoice.unitPrice;
+        invoiceCount++;
     }
 
     public String getId() {
